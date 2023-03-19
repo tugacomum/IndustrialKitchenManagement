@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Admin - Encomendas</title>
+    <title>Admin - Operação Produção</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -85,7 +85,7 @@
 
             <hr class="sidebar-divider d-none d-md-block">
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="orders.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Encomendas</span></a>
@@ -93,7 +93,7 @@
 
             <hr class="sidebar-divider d-none d-md-block">
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="supplierOrders.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Encomendas Fornecedores</span></a>
@@ -324,11 +324,11 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Encomendas</h1>
-                    <p class="mb-4">Lista de Encomendas</p>
+                    <h1 class="h3 mb-2 text-gray-800">Operação Produção</h1>
+                    <p class="mb-4">Lista de Operações</p>
 
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                        Criar Encomenda
+                        Criar Operação
                     </button>
 
                     <!-- Modal -->
@@ -337,7 +337,7 @@
                         <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenterTitle">Criar Encomenda</h5>
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Criar Operação</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -350,9 +350,16 @@
                                                 aria-describedby="emailHelp" placeholder="Código Encomenda">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Nome Cliente</label>
+                                            <label for="exampleInputEmail1">Nome Fornecedor</label>
                                             <input type="text" class="form-control" id="exampleInputEmail1"
                                                 aria-describedby="emailHelp" placeholder="Nome Encomenda">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Tipo de Encomenda</label>
+                                            <select class="form-control form-control">
+                                                <option>Matéria Prima</option>
+                                                <option>Finalizado</option>
+                                            </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Data Pedido</label>
@@ -392,7 +399,8 @@
                                     <thead>
                                         <tr>
                                             <th>Código</th>
-                                            <th>Nome Cliente</th>
+                                            <th>Nome Fornecedor</th>
+                                            <th>Tipo Encomenda</th>
                                             <th>Data Pedido</th>
                                             <th>Estado</th>
                                             <th>Descrição</th>
@@ -402,23 +410,26 @@
                                         <tr>
                                             <td>12001</td>
                                             <td>José Figueiras</td>
+                                            <td>Matéria Prima</td>
                                             <td>01/03/2023</td>
                                             <td>Pendente</td>
-                                            <td>Cozinha moderna</td>
+                                            <td>20 ripas madeira</td>
                                         </tr>
                                         <tr>
                                             <td>12002</td>
                                             <td>Artur Fonseca</td>
+                                            <td>Finalizado</td>
                                             <td>02/01/2023</td>
                                             <td>Entregue</td>
-                                            <td>Cozinha Madeira</td>
+                                            <td>Fogão com tampo de madeira</td>
                                         </tr>
                                         <tr>
                                             <td>12003</td>
                                             <td>Maria Rosa</td>
+                                            <td>Matéria Prima</td>
                                             <td>10/02/2023</td>
                                             <td>Entregue</td>
-                                            <td>Cozinha Marmore</td>
+                                            <td>40 peças 4*4 de pedra mármore</td>
                                         </tr>
                                     </tbody>
                                 </table>

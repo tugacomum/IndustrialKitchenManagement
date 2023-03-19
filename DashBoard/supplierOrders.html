@@ -85,10 +85,18 @@
 
             <hr class="sidebar-divider d-none d-md-block">
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="orders.html">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Encomendas</span></a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="supplierOrders.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Encomendas Fornecedores</span></a>
             </li>
 
             <hr class="sidebar-divider d-none d-md-block">
@@ -347,9 +355,11 @@
                                                 aria-describedby="emailHelp" placeholder="Nome Encomenda">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Matéria Prima</label>
-                                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp" placeholder="Nome Encomenda">
+                                            <label for="exampleInputEmail1">Tipo de Encomenda</label>
+                                            <select class="form-control form-control">
+                                                <option>Matéria Prima</option>
+                                                <option>Finalizado</option>
+                                            </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Data Pedido</label>
@@ -389,7 +399,8 @@
                                     <thead>
                                         <tr>
                                             <th>Código</th>
-                                            <th>Nome Cliente</th>
+                                            <th>Nome Fornecedor</th>
+                                            <th>Tipo Encomenda</th>
                                             <th>Data Pedido</th>
                                             <th>Estado</th>
                                             <th>Descrição</th>
@@ -399,23 +410,26 @@
                                         <tr>
                                             <td>12001</td>
                                             <td>José Figueiras</td>
+                                            <td>Matéria Prima</td>
                                             <td>01/03/2023</td>
                                             <td>Pendente</td>
-                                            <td>Cozinha moderna</td>
+                                            <td>20 ripas madeira</td>
                                         </tr>
                                         <tr>
                                             <td>12002</td>
                                             <td>Artur Fonseca</td>
+                                            <td>Finalizado</td>
                                             <td>02/01/2023</td>
                                             <td>Entregue</td>
-                                            <td>Cozinha Madeira</td>
+                                            <td>Fogão com tampo de madeira</td>
                                         </tr>
                                         <tr>
                                             <td>12003</td>
                                             <td>Maria Rosa</td>
+                                            <td>Matéria Prima</td>x
                                             <td>10/02/2023</td>
                                             <td>Entregue</td>
-                                            <td>Cozinha Marmore</td>
+                                            <td>40 peças 4*4 de pedra mármore</td>
                                         </tr>
                                     </tbody>
                                 </table>
